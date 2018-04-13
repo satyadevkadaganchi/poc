@@ -1,0 +1,25 @@
+<html ng-app="app" ng-controller="contactController">
+
+
+<form ng-submit="contact_details()">
+    <label>Uname.</label>&emsp;&emsp;&emsp;&emsp;
+    <input type="text" ng-model="obj.uname">
+
+    <br><br>
+    <label>Upwd.</label>&emsp;&emsp;&emsp;&emsp;
+    <input type="password" ng-model="obj.upwd">
+
+    <br><br>
+    <input type="submit">
+</form>
+
+
+
+<h1>{{result}}</h1>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="module.js"></script>
+<script src="contactService.js"></script>
+<script src="contactController.js"></script>
+
+</html>
